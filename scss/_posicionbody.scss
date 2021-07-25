@@ -1,0 +1,99 @@
+@mixin centrarbody ( 
+             $justify,
+             $align,
+             $margin
+            ) {
+    justify-content: $justify;
+    align-content: $align;
+    margin: $margin;
+}
+
+.nosotros {
+    @include centrarbody(center, center, auto);
+    text-align: center;
+
+    div {
+        font-size: 120%;
+        padding: 8px;
+
+        p {
+            padding: 5px;
+            font-weight: bold;
+        }
+    }
+}
+
+.bigbox {
+    @include centrarbody(center, center, auto);
+    padding: 50px;
+
+    div h1, h2, h3{
+        text-align: center;
+        font-size: 200%;
+        padding-bottom: 10px;
+
+        span {
+            font-size: 180%;
+            padding: 20px;
+        }
+    }
+
+    .bigbox__unidad {
+        display: flex;
+        flex-direction: row;
+        @include centrarbody(center, center, auto);
+
+        div {
+            padding: 8px;
+            text-align: center;
+
+            img {
+                filter: grayscale(40%);
+
+                &:hover {
+                    transition: ease 0.8s;
+                    outline: none;                  
+                    cursor: pointer;
+                    filter: grayscale(5%);
+                }
+            }
+        }
+    }
+
+    .cartas {
+        max-width: 70%;
+        flex-wrap: wrap;
+
+        div {
+            padding: 5% 5% ;
+        
+            
+            &:hover {
+                border-radius: 20px;
+                background-color: #206445;
+                transition: ease 0.1s;
+                color: black;
+                font-weight: bold;
+                filter: grayscale(10%);               
+            }
+        
+            div span {
+                display: flex;
+                flex-direction: column;
+                font-size: 20px;
+                margin: 3px;
+            }
+
+            div p {
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            div button {
+                filter: invert(2);
+                margin: 3px;
+                font-size: 18px;
+            }
+        }
+    }
+}

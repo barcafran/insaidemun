@@ -1,0 +1,27 @@
+@mixin centrado ($display, $justify, $align) {
+    display:$display;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+.videoslogan {
+    @include centrado (flex, space-evenly, center);
+    margin: auto;
+    padding: 10%;
+    background-color :#0D0D0D;
+    color: #BFBDBA;
+
+    .videoslogan__h1 {
+        @include centrado(flex, center, center);
+
+        h1 {
+            @include centrado(flex, center, center);
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+    }
+}
+
+
+
+    

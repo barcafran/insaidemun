@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Barceló">
+    <meta name="description" content="Explorá procesos de artistas, contactalos y trabajá con ellos en cualquier parte del mundo.">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>insaidemun | viendo artistas caminar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <a href="#"><img src="img/logo-insaidemun.png" alt="logo-insaidemun"></a>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li class="navbar__li"><a class="navbar__a" href="ingresa.html"><span class="navbar__inicial">i</span>ngresá</a></li class="navbar__li"> 
+                        <li class="navbar__li"><a class="navbar__a" href="#nosotros"><span class="navbar__inicial">n</span>osotros</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="solicitudes.html"><span class="navbar__inicial">s</span>olicitudes</a></li class="navbar__li"> 
+                        <li class="navbar__li"><a class="navbar__a" href="artistas.html"><span class="navbar__inicial">a</span>rtistas</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="#inscripcion"><span class="navbar__inicial">i</span>nscribite</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="dona.html"><span class="navbar__inicial">d</span>oná</a></li class="navbar__li">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main> <!--Video y slogan-->
+
+        <div class="videoslogan">   <!--Video-->
+            <iframe width="480" height="270" frameborder="0"
+            src="https://www.youtube.com/embed/uzNKsRUwUoo?controls=0&loop=1&autoplay=1&mute=1" ntacion__video">
+            </iframe>   <!--En el tag no va el tamaño ni nada del estilo, solo src -->    
+                
+            <!--Slogan-->
+            <div class="videoslogan__h1">
+                <h1>
+                    cualquier artista <br>
+                    de cualquier arte <br>
+                    en cualquier parte
+                </h1>
+            </div>  
+        </div>
+    </main>
+
+    <div class="nosotros" id="nosotros">   <!--Nosotros-->
+        <div>
+            <h2>Sobre nosotros</h2>
+        </div>
+        <div>
+            <p>
+                en insaidemun te invitamos a conocer los procesos que están atravesando artistas de todo tipo en todo el mundo
+            </p>
+            <p>
+                nos vamos a meter en los procesos artísticos, se trata de abrir la percepción, de visitar y compartir los ingredientes de nuestro arte.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="bigbox">   <!--Procesos-->
+        <div>
+            <h3>Estos son artistas en proceso</h3>
+        </div>
+        <div class="bigbox__unidad">
+            <!--Marisel Alvarez-->
+            <div>
+                <img src="img/Maricel-Alvarez.jpg" alt="marisel-alvarez">
+                <p>Marisel Alvarez</p>
+                <p>escénicas</p>
+            </div>
+
+            <!--Fito Paez-->
+            <div>
+                <img src="img/fito-paez.jpg" alt="fito-paez">
+                <p>Fito Páez</p>
+                <p>sonoras</p>
+            </div>
+
+            <!--Nora Lezano-->
+            <div>
+                <img src="img/Nora-Lezano.jpg" alt="nora-lezano">
+                <p>Nora Lezano</p>
+                <p>visuales</p>
+            </div>
+
+            <!--Agustin Falco-->
+            <div>
+                <img src="img/agustin-falco.jpg" alt="agustin-falco">
+                <p>Agustín Falco</p>
+                <p>audiovisuales</p>
+            </div>
+
+            <!--Jorge Fandermole-->
+            <div>
+                <img src="img/jorge-fandermole.jpg" alt="jorge-fandermole">
+                <p>Jorge Fandermole</p>
+                <p>sonoras</p>
+            </div>
+
+            <!--Luis Pescetti-->
+            <div>
+                <img src="img/luis-pescetti.jpg" alt="luis-pescetti">
+                <p>Luis Pescetti</p>
+                <p>escritura</p>
+            </div>
+
+            <!--Coni Curi-->
+            <div>
+                <img src="img/coni-curi.jpg" alt="coni-curi">
+                <p>Coni Curi</p>
+                <p>visuales</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form__div" id="inscripcion"> <!--Formulario de inscripción-->
+        <form action="enviar.php" method="POST" enctype="multipart/form-data">
+            <fieldset class="form__fieldset">
+                
+                <legend class="form__title">Se parte</legend>
+                
+                <label for="nombreoproyecto">tu nombre o del proyecto</label>
+                <input type="text" name="nombreoproyecto" placeholder="tu nombre o del proyecto" maxlength="100" ><br>
+
+                <label for="sonoras">sonoras</label>
+                <input type="checkbox" name="sonoras">
+                
+                <label for="escenicas">escénicas</label>
+                <input type="checkbox" name="escenicas">
+                
+                <label for="visuales">visuales</label>
+                <input type="checkbox" name="visuales">
+                
+                <label for="audiovisuales">audiovisuales</label>
+                <input type="checkbox" name="audiovisuales">
+                
+                <label for="escritura">escritura</label>
+                <input type="checkbox" name="escritura">
+                
+                <label for="otro">otro</label>
+                <input type="text" name="otro" placeholder="otro"><br>
+                
+                <label for="lugar">de donde sos?</label>
+                <input type="text" name="lugar" placeholder="de donde sos?"><br>
+                
+                <label for="mail">tu mail?</label>
+                <input type="text" name="mail" placeholder="tu mail?"><br>
+                
+                <label for="password">contraseña</label>
+                <input type="password" name="password" maxlength="20" ><br>
+                
+                <legend>años en esto</legend> 
+
+                <select class="form__desplegable" name="años en carrera">
+                    <option value="es secreto">es secreto</option>
+                    <option value="menos de 3">menos de 3</option>
+                    <option value="entre 3 y 9">entre 3 y 9</option>
+                    <option value="más de 10">más de 10</option>
+                </select>
+
+                <div class="form__div">
+                    <input class="formbtn" type="submit" value="sumate!">
+                    <input class="formbtn" type="reset" value="limpiar">
+                    <button><a href="ingresa.html" >ya soy usuario</a></button>
+                </div>   
+
+            </fieldset>     
+        </form>
+    </div>
+
+    <div class="centrar ayudas"> <!--Ayudas-->
+        <div>
+            <h3>¡Ayudanos a crecer!</h3>
+        </div>
+        <div>
+            <button><a href="https://api.whatsapp.com/send?text=¡te%20invito%20a%20conocer%20insaidemun!%20index-insaidemun-barcelo.html">compartinos</a></button>
+            <button><a href="dona.html">doná</a></button>
+            <button><a href="https://www.capterra.co.uk/">valoranos</a></button>
+        </div>
+
+    </div>
+
+    <footer> <!--Footer redes--> 
+        <div class="footer centrar">    
+            <div>
+                <a href="https://www.youtube.com/insaidemun" class="botonlink"><i class="fab fa-youtube footer__i" ></i></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/insaidemun" class="botonlink"><i class="fab fa-instagram footer__i"></i></a>
+            </div>  
+            <div>
+                <a href="mailto:franciscomanuelbarcelo@gmail.com?Subject=Contacto%20a%20insaidemun" class="botonlink"><i class="far fa-envelope footer__i"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

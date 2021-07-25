@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Average Sans", sans-serif;
+}
+
+header {
+  background-color: #8C8A87;
+}
+header div {
+  width: 95%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+header div .logo {
+  height: 60px;
+  background-color: #8C8A87;
+  float: left;
+  padding-top: 4px;
+  filter: invert(0);
+}
+header div .logo a img:hover {
+  transition: ease 0.8s;
+  outline: none;
+  cursor: progress;
+  filter: invert(100);
+}
+header div .navbar {
+  height: 80px;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+header div .navbar__li {
+  display: inline;
+  padding: 4px;
+  border-right: 1px solid #0D0D0D;
+}
+header div .navbar__li:last-child {
+  border-right: none;
+}
+header div .navbar__a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e0047;
+}
+header div .navbar__a:hover {
+  color: #206445;
+  transition: ease 0.3s;
+  outline: none;
+}
+header div .navbar__inicial {
+  color: #5b2f6e;
+}
+
+.centrar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.ayudas {
+  background-color: #0D0D0D;
+  padding: 10px;
+  margin: 20px 0;
+  flex-direction: column;
+  padding: 1%;
+}
+.ayudas div h3 {
+  margin: 15px;
+}
+
+.footer {
+  background-color: #F2EFEB;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+}
+.footer div {
+  margin: 10px;
+}
+
+.videoslogan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 10%;
+  background-color: #0D0D0D;
+  color: #BFBDBA;
+}
+.videoslogan .videoslogan__h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoslogan .videoslogan__h1 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.nosotros {
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+}
+.nosotros div {
+  font-size: 120%;
+  padding: 8px;
+}
+.nosotros div p {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.bigbox {
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding: 50px;
+}
+.bigbox div h1, .bigbox h2, .bigbox h3 {
+  text-align: center;
+  font-size: 200%;
+  padding-bottom: 10px;
+}
+.bigbox div h1 span, .bigbox h2 span, .bigbox h3 span {
+  font-size: 180%;
+  padding: 20px;
+}
+.bigbox .bigbox__unidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+.bigbox .bigbox__unidad div {
+  padding: 8px;
+  text-align: center;
+}
+.bigbox .bigbox__unidad div img {
+  filter: grayscale(40%);
+}
+.bigbox .bigbox__unidad div img:hover {
+  transition: ease 0.8s;
+  outline: none;
+  cursor: pointer;
+  filter: grayscale(5%);
+}
+.bigbox .cartas {
+  max-width: 70%;
+  flex-wrap: wrap;
+}
+.bigbox .cartas div {
+  padding: 5% 5%;
+}
+.bigbox .cartas div:hover {
+  border-radius: 20px;
+  background-color: #206445;
+  transition: ease 0.1s;
+  color: black;
+  font-weight: bold;
+  filter: grayscale(10%);
+}
+.bigbox .cartas div div span {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin: 3px;
+}
+.bigbox .cartas div div p {
+  padding: 10px;
+  font-size: 18px;
+}
+.bigbox .cartas div div button {
+  filter: invert(2);
+  margin: 3px;
+  font-size: 18px;
+}
+
+.form__div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form__fieldset {
+  padding: 8px;
+  background-color: #242424;
+  margin: auto;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.form__title {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.form__desplegable {
+  padding: 2px;
+  background-color: #5e5e5e;
+  margin: right;
+  color: #d8d8d7;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.form__a {
+  display: flex;
+  justify-content: center;
+  color: #d8d8d7;
+  font-weight: bold;
+  margin: 5%;
+}
+
+.completar {
+  margin: 70px 0px;
+}
+.completar fieldset {
+  align-items: space-between;
+  justify-content: space-evenly;
+  min-width: 300px;
+  min-height: 280px;
+}
+.completar fieldset label {
+  font-size: 30px;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  background-color: #0D0D0D;
+  color: #BFBDBA;
+}
+
+/* Botones */
+button {
+  background-color: #ffffff;
+  border: 0;
+  padding: 0;
+  border-radius: 1;
+  margin: 0;
+  background-color: #F2EFEB;
+  border: #0D0D0D;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0px 9px 0px 9px;
+}
+
+.formbtn {
+  background-color: #ffffff;
+  border: 0;
+  padding: 0;
+  border-radius: 1;
+  margin: 0;
+  background-color: #F2EFEB;
+  border: #0D0D0D;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0px 9px 0px 9px;
+  font-size: 18px;
+}
+.formbtn:hover {
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+/*# sourceMappingURL=style.css.map */

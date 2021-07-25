@@ -1,0 +1,61 @@
+@mixin coloresbase ($bgcolor, $fontcolor) {
+    background-color: $bgcolor;
+    color: $fontcolor;
+
+    @if $bgcolor == #FFFFFF #000000 {
+        background-color: #0D0D0D;
+        color: #BFBDBA;
+    } 
+}
+
+body {
+    @include coloresbase (#ffffff, #000000)
+}
+
+/* Botones */
+
+@mixin botones ($bgbtncolor, $border, $padding, $borderradius,$margin) {
+    background-color: $bgbtncolor;
+    border: $border;
+    padding: $padding;
+    border-radius: $borderradius;
+    margin: $margin;
+
+    @if $bgbtncolor == #ffffff {
+        background-color:#F2EFEB;
+        border: #0D0D0D;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 0px 9px 0px 9px;
+    } 
+}
+
+button {
+    @include botones (#ffffff, 0, 0, 1, 0)
+}
+
+.formbtn {
+    @include botones (#ffffff, 0, 0, 1, 0);
+    font-size: 18px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* Links */
+
+@mixin linksbtn ($deco, $color) {
+    text-decoration: $deco;
+    color:$color;
+
+    @if $color == -webkit-link {
+        text-decoration: none;
+        color:#0d0d0d;
+    } 
+}
+
+a {
+    @include linksbtn (none, #0d0d0d)
+}
+

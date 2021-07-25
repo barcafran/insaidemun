@@ -1,0 +1,57 @@
+@mixin formstyle (
+    $padding,
+    $bgcolor,
+    $margin) {
+    
+    padding: $padding;
+    background-color: $bgcolor;
+    margin: $margin;
+}
+
+.form__div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form__fieldset {
+    @include formstyle (8px, #242424, auto);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.form__title {
+    font-weight: bold;
+    font-size: 150%
+}
+
+.form__desplegable {
+    @include formstyle(2px, #5e5e5e, right);
+    color: #d8d8d7;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form__a {
+    display: flex;
+    justify-content: center;
+    color: #d8d8d7;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.completar {
+    margin: 70px 0px;
+    
+    fieldset {
+        align-items: space-between;
+        justify-content: space-evenly;
+        min-width: 300px;
+        min-height: 280px;
+
+        label  {
+            font-size: 30px;
+        }
+    }
+}

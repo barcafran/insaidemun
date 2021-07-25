@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Barceló">
+    <meta name="description" content="ingreso a insaidemun.">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>ingreso a insaidemun</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-insaidemun.png" alt="logo-insaidemun"></a>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li class="navbar__li"><a class="navbar__a" href="ingresa.html"><span class="navbar__inicial">i</span>ngresá</a></li class="navbar__li"> 
+                        <li class="navbar__li"><a class="navbar__a" href="index.html#nosotros"><span class="navbar__inicial">n</span>osotros</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="solicitudes.html"><span class="navbar__inicial">s</span>olicitudes</a></li class="navbar__li"> 
+                        <li class="navbar__li"><a class="navbar__a" href="artistas.html"><span class="navbar__inicial">a</span>rtistas</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="index.html#inscripcion"><span class="navbar__inicial">i</span>nscribite</a></li class="navbar__li">
+                        <li class="navbar__li"><a class="navbar__a" href="dona.html"><span class="navbar__inicial">d</span>oná</a></li class="navbar__li">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bigbox">
+            <div> <!--Titulos-->
+                <h1><span>Ingresá a insaidemun</span><br>
+                ¡te estuvimos esperando!</h1>
+            </div>
+
+            <div class="form__div completar"> <!--Formingreso-->
+                <form id="ingreso" action="enviar.php" method="POST" enctype="multipart/form-data">
+                    <fieldset class="form__fieldset">
+
+                        <legend class="form__title">iniciar sesión</legend>
+                        
+                        <label for="nombredeusuario">nombre de usuario</label>
+                        
+                        <input type="text" name="nombrede usuario" placeholder="usuario" maxlength="35" ><br>
+                        <label for="contraseña">contraseña</label>
+                        
+                        <input type="password" name="nombrede usuario" maxlength="20" ><br>
+                        <legend class="formulario__label"><a class="form__a" href="index.html#inscripcion" class="link__op">no tenés cuenta?</a></legend>
+                        
+                        <div class="form__div">
+                            <input class="formbtn" type="submit" value="ingresar">
+                            <input class="formbtn" type="reset" value="limpiar">
+                        </div>
+                    </fieldset>     
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <div class="centrar ayudas"> <!--Ayudas-->
+        <div>
+            <h3>¡Ayudanos a crecer!</h3>
+        </div>
+        <div>
+            <button><a href="https://api.whatsapp.com/send?text=¡te%20invito%20a%20conocer%20insaidemun!%20index-insaidemun-barcelo.html">compartinos</a></button>
+            <button><a href="dona.html">doná</a></button>
+            <button><a href="https://www.capterra.co.uk/">valoranos</a></button>
+        </div>
+
+    </div>
+
+    <footer> <!--Footer redes--> 
+        <div class="footer centrar">    
+            <div>
+                <a href="https://www.youtube.com/insaidemun" class="botonlink"><i class="fab fa-youtube footer__i" ></i></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/insaidemun" class="botonlink"><i class="fab fa-instagram footer__i"></i></a>
+            </div>  
+            <div>
+                <a href="mailto:franciscomanuelbarcelo@gmail.com?Subject=Contacto%20a%20insaidemun" class="botonlink"><i class="far fa-envelope footer__i"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
