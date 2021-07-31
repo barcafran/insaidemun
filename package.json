@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barcafran/insaidemun.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barcafran/insaidemun/issues"
+  },
+  "homepage": "https://github.com/barcafran/insaidemun#readme",
   "description": ""
 }
