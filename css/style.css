@@ -102,7 +102,7 @@ header div .navbar__inicial {
   justify-content: center;
   align-content: center;
   margin: auto;
-  padding: 50px;
+  padding: 3vw;
 }
 .bigbox div h1, .bigbox h2, .bigbox h3 {
   text-align: center;
@@ -287,7 +287,7 @@ a {
   margin: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   header {
     height: 150px;
   }
@@ -303,21 +303,22 @@ a {
   }
   header div .navbar {
     height: 60px;
+    width: 100%;
     box-sizing: border-box;
     margin-top: 5px;
     align-content: center;
   }
-  header div .navbar__li {
+  header div .navbar li {
     display: inline;
     padding: 3px;
     border-right: 1px solid #0D0D0D;
     justify-items: center;
   }
-  header div .navbar__li:last-child {
+  header div .navbar li:last-child {
     border-right: none;
   }
-  header div .navbar__a {
-    font-size: 14px;
+  header div .navbar a {
+    font-size: 3.5vw;
   }
 
   .videoslogan {
@@ -327,11 +328,11 @@ a {
     margin: auto;
     flex-direction: column;
     padding: 10%;
-    max-width: 380px;
+    max-width: 360px;
   }
 
   .video {
-    max-width: 380px;
+    max-width: 360px;
     max-height: 214px;
   }
 
@@ -350,12 +351,12 @@ a {
 
   .form__div {
     width: 80%;
-    font-size: 12px;
+    font-size: 3vw;
     margin: auto;
   }
 
   .formbtn {
-    font-size: 12px;
+    font-size: 3vw;
     padding: 6px;
     border-radius: 4px;
     margin: 3px 5px 0px 5px;
@@ -367,7 +368,7 @@ a {
     align-content: space-between;
   }
   .completar fieldset label {
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   .bigbox .cartas {
@@ -382,17 +383,17 @@ a {
     background-color: #BFBDBA;
   }
   .bigbox .cartas p, .bigbox .cartas span {
-    font-size: 14px;
+    font-size: 3.2vw;
     justify-content: space-between;
   }
   .bigbox .cartas img {
     image-rendering: optimizeSpeed;
-    width: 20%;
-    height: 40%;
+    width: 100%;
+    height: auto;
   }
 
   div h1 {
-    font-size: 120%;
+    font-size: 6vw;
   }
   div h1 span {
     font-size: 150%;

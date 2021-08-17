@@ -1,4 +1,4 @@
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     header {
         height: 150px;
 
@@ -15,24 +15,25 @@
             
             .navbar {
                 height: 60px;
+                width: 100%;
                 box-sizing: border-box;
                 margin-top: 5px;
                 align-content: center;
-            }
+            
     
-            .navbar__li{
-                display: inline;
-                padding: 3px;
-                border-right: 1px solid #0D0D0D;
-                justify-items: center;
+                li{
+                    display: inline;
+                    padding: 3px;
+                    border-right: 1px solid #0D0D0D;
+                    justify-items: center;
 
-                &:last-child {
-                    border-right: none;
-                }
+                    &:last-child {
+                        border-right: none;
+                    }
             }
-
-            .navbar__a {
-                font-size: 14px;
+                a {
+                font-size: 3.5vw;
+            }
             }
         }
     }    
@@ -43,11 +44,11 @@
         margin: auto;
         flex-direction: column;
         padding: 10%;
-        max-width: 380px; 
+        max-width: 360px; 
     }
 
     .video {
-        max-width: 380px; 
+        max-width: 360px; 
         max-height: 214px; 
     }
 
@@ -69,13 +70,13 @@
 
     .form__div {
         width: 80%;
-        font-size: 12px;
+        font-size: 3vw;
         margin: auto;
     }
 
 
     .formbtn {
-        font-size: 12px;
+        font-size: 3vw;
         padding: 6px;
         border-radius: 4px;
         margin: 3px 5px 0px 5px;
@@ -87,7 +88,7 @@
         align-content:space-between;
         
         label  {
-            font-size: 12px;
+            font-size: 3vw;
         }
     }
 
@@ -109,19 +110,19 @@
         }
     
         p, span{
-            font-size: 14px;
+            font-size: 3.2vw;
             justify-content: space-between;
         }
 
         img {
             image-rendering: optimizeSpeed;
-            width: 20%;
-            height: 40%;
+            width: 100%;
+            height: auto;
         }
     }
     
     div h1 {
-        font-size: 120%;
+        font-size: 6vw;
 
         span {
             font-size: 150%;
